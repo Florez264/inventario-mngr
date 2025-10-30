@@ -22,3 +22,24 @@ Incluye autenticación basada en roles (**Administrador** y **Cliente**) y endpo
 ```bash
 git clone https://github.com/Florez264/inventario-mngr.git
 cd inventario-mngr
+
+npm install
+
+
+# Puerto del servidor
+PORT=3000
+
+# Configuración de la base de datos
+DB_HOST=localhost
+DB_PORT=5432
+DB_USERNAME=postgres
+DB_PASSWORD=tu_contraseña
+DB_NAME=inventario_db
+
+# JWT
+JWT_SECRET=clave_secreta_segura
+JWT_EXPIRES_IN=1d
+
+
+npm run dev
+
