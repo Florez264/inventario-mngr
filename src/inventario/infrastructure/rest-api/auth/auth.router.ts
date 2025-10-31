@@ -1,7 +1,7 @@
 import { Router } from "express";
-import container from "../../../core/infrastructure/container";
+import container from "../../../../core/infrastructure/container";
 import { AuthController } from "./authController";
-import { authMiddleware } from "../../../core/middlewares/authMiddleware";
+import { authMiddleware } from "../../../../core/middlewares/authMiddleware";
 
 const authRouter = Router();
 const authController = container.resolve<AuthController>("authController");

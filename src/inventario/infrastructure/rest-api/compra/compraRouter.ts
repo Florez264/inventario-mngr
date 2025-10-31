@@ -1,7 +1,7 @@
 import { Router } from "express";
-import container from "../../../core/infrastructure/container";
+import container from "../../../../core/infrastructure/container";
 import { CompraController } from "./CompraController";
-import { authMiddleware } from "../../../core/middlewares/authMiddleware";
+import { authMiddleware } from "../../../../core/middlewares/authMiddleware";
 
 const compraRouter = Router();
 const compraController = container.resolve<CompraController>("compraController");

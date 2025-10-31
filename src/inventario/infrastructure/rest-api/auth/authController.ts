@@ -1,9 +1,9 @@
 import { Request, Response } from "express";
-import { ConsoleLogger } from "../../../shared/infrastructure/console-logger";
-import { AuthService } from "../../application/services/AuthService";
-import HttpStatusCodeEnum from "../../../shared/domain/enums/http-status-code.enum";
-import { Dependencies } from "../../../core/domain/dependencies";
-import { ResponseMessage } from "../../../shared/utils/response.util";
+import { ConsoleLogger } from "../../../../shared/infrastructure/console-logger";
+import { AuthService } from "../../../application/services/AuthService";
+import HttpStatusCodeEnum from "../../../../shared/domain/enums/http-status-code.enum";
+import { Dependencies } from "../../../../core/domain/dependencies";
+import { ResponseMessage } from "../../../../shared/utils/response.util";
 
 export class AuthController {
   private logger: ConsoleLogger;

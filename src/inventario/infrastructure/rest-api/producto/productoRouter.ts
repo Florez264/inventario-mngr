@@ -1,7 +1,7 @@
 import { Router } from "express";
-import container from "../../../core/infrastructure/container";
+import container from "../../../../core/infrastructure/container";
 import { ProductoController } from "./productoController";
-import { authMiddleware } from "../../../core/middlewares/authMiddleware";
+import { authMiddleware } from "../../../../core/middlewares/authMiddleware";
 
 const productoRouter = Router();
 const productoController = container.resolve<ProductoController>("productoController");

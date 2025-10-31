@@ -1,9 +1,9 @@
 import { Request, Response } from "express";
-import { ConsoleLogger } from "../../../shared/infrastructure/console-logger";
-import { Dependencies } from "../../../core/domain/dependencies";
-import HttpStatusCodeEnum from "../../../shared/domain/enums/http-status-code.enum";
-import { ResponseMessage } from "../../../shared/utils/response.util";
-import { ProductoService } from "../../application/services/ProductoService";
+import { ConsoleLogger } from "../../../../shared/infrastructure/console-logger";
+import { Dependencies } from "../../../../core/domain/dependencies";
+import HttpStatusCodeEnum from "../../../../shared/domain/enums/http-status-code.enum";
+import { ResponseMessage } from "../../../../shared/utils/response.util";
+import { ProductoService } from "../../../application/services/ProductoService";
 
 export class ProductoController {
   private logger: ConsoleLogger;
